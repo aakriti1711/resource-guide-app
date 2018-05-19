@@ -1,3 +1,24 @@
 <h1>
   {{title}}
 </h1>
+
+
+
+<div class="container" ng-app="myApp" ng-controller="Main"> 
+  <h3>Angular Question Answer Accordion List</h3>
+  <div class="panel-group" id="questions">
+  	<div class="panel panel-default">
+      <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#questions" data-target="#answer">
+        <h4 class="panel-title">
+          <a href="">Q: What is your Name?</a>
+        </h4>
+      </div>
+      <div id="answer" class="panel-collapse collapse">
+        <div class="panel-body">
+          <h4>Answer</h4>
+          <p>My Name is Aakriti</p>
+        </div>
+      </div>
+    </div><!--/panel-->
+  </div><!--/panel-group-->
+</div><!--/container-->
