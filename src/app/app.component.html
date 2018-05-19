@@ -1,24 +1,24 @@
-<h1>
-  {{title}}
-</h1>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Refresher App</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a  href="#">Javascript</a></li>
+        <li><a routerLink="/javascript" href="#about">CSS 3</a></li>
+        <li><a  href="#contact">HTML 5</a></li>
+      </ul>
+    
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+<router-outlet></router-outlet>
 
-
-<div class="container" ng-app="myApp" ng-controller="Main"> 
-  <h3>Angular Question Answer Accordion List</h3>
-  <div class="panel-group" id="questions">
-  	<div class="panel panel-default">
-      <div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#questions" data-target="#answer">
-        <h4 class="panel-title">
-          <a href="">Q: What is your Name?</a>
-        </h4>
-      </div>
-      <div id="answer" class="panel-collapse collapse">
-        <div class="panel-body">
-          <h4>Answer</h4>
-          <p>My Name is Aakriti</p>
-        </div>
-      </div>
-    </div><!--/panel-->
-  </div><!--/panel-group-->
-</div><!--/container-->
